@@ -4,6 +4,7 @@ import LoginScreen from "./../LoginScreen/LoginScreen";
 import NavBar from "../../Components/NavBar";
 import Header from "../../Components/Header";
 import MoreScreen from "./../MoreScreen/MoreScreen";
+import About from "../AboutScreen/About";
 import { useState } from "react";
 
 export default function MainScreen() {
@@ -18,6 +19,7 @@ export default function MainScreen() {
         <div className="BodyContentContainer">
           <Routes>
             <Route path="Home" element={<HomeScreen setActiveTab={setActiveTab}/>} />
+            <Route path="About" element={<About  setActiveTab={setActiveTab}/>} />
             <Route path="Login" element={<LoginScreen  setActiveTab={setActiveTab}/>} />
             <Route path="More" element={<MoreScreen  setActiveTab={setActiveTab}/>} />
             <Route path="*" element={<Navigate to="Home"  setActiveTab={setActiveTab}/>} />

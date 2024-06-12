@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function MoreScreen({setActiveTab}) {
   useEffect(() => {
-    setActiveTab();
+    setActiveTab(3);
   }, [setActiveTab]);
   return (
     <div>MoreScreen</div>
