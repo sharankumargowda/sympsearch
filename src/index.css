@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+:root {
+  --backgroundColor: #ffffff;
+  --boxShow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --greyColor: #c7c7c7;
+  --activeColor: #292b39;
+}
+.root {
+  margin: 0;
+  height: 100vh;
+
+}
+/* center style */
+.cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Main screen Css */
+.MainContainer {
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.MainContainer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 6%;
+  padding-left: 6%;
+  height: 55px;
+}
+.MainContainer header .logo {
+  font-family: "LXGW WenKai TC", cursive;
+  font-weight: 600;
+  font-size: large;
+  font-style: normal;
+}
+.MainContainer header .SearchContainer {
+  border: 1px solid;
+  padding: 10px;
+}
+.MainContainer header .icons {
+  padding: 7px 7px 5px 7px;
+  box-shadow: var(--boxShow);
+  margin-left: 20px;
+  border-radius: 50%;
+}
+.BodySectionContainer {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 55px);
+}
+.BodySectionContainer .BodyNavbarContainer {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.BodySectionContainer .BodyNavbarContainer nav ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.BodySectionContainer .BodyNavbarContainer nav ul .navLink {
+  color: var(--greyColor);
+  padding: 15px 7px 7px 7px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.BodySectionContainer .BodyNavbarContainer nav ul .navLink-active {
+  color: var(--activeColor);
+  padding: 15px 7px 7px 7px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.BodySectionContainer .BodyContentContainer {
+  flex: 3;
+  height: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("./assets/bgImg.png");
+}
+
+/* !Styles for devices with a maximum width of 600px (e.g., most phones) */
+@media (max-width: 600px) {
+  .MainContainer header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .BodySectionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
+  .BodySectionContainer .BodyNavbarContainer {
+    height: fit-content;
+    width:  100%;
+    display: flex;
+    justify-content: center;
+  }
+  .BodySectionContainer .BodyNavbarContainer nav ul {
+    flex-direction: row;
+  }
+}
+/* !Styles for devices with a width between 601px and 768px (e.g., most tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+}
