@@ -6,7 +6,7 @@ function HomeScreen({ setActiveTab }) {
     setActiveTab(1);
   }, [setActiveTab]);
 
-  return <div className="homeScreen">Home screen</div>;
+  return <div className="homeScreen">sharan screen</div>;
 }
 
 HomeScreen.propTypes = {
