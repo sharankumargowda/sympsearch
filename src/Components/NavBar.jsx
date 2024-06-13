@@ -1,8 +1,15 @@
 import { Link } from "react-router-dom";
-import { BsFillHouseFill,BsGridFill ,BsFillPersonPlusFill ,BsFillPersonDashFill ,BsArrowThroughHeartFill} from "react-icons/bs";
+import {
+  BsFillHouseFill,
+  BsGridFill,
+
+  
+  BsInfoCircle,
+} from "react-icons/bs";
+import { BiSupport } from "react-icons/bi";
 import Tooltip from "@mui/material/Tooltip";
-// import {  } from "react-icons/ai";
 import PropTypes from "prop-types";
+import { RiLoginBoxLine,RiLoginCircleLine } from "react-icons/ri";
 
 export default function NavBar({ activeTab }) {
   const loggedIn = false;
@@ -12,11 +19,11 @@ export default function NavBar({ activeTab }) {
         <li>
           <Tooltip title="Home" placement="top-end" arrow>
             <Link
-              to="Home"
+              to="Home"                    
               className={activeTab === 1 ? "navLink-active" : "navLink"}
             >
               <BsFillHouseFill size={21} />
-            </Link>
+            </Link>   
           </Tooltip>
         </li>
 
@@ -24,32 +31,51 @@ export default function NavBar({ activeTab }) {
           <Tooltip title="About" placement="top-end" arrow>
             <Link
               to="About"
-              className={activeTab ===  2 ? "navLink-active" : "navLink"}
+              className={activeTab === 2 ? "navLink-active" : "navLink"}
             >
-             <BsArrowThroughHeartFill size={20}/>
+              <BiSupport size={20} />
             </Link>
           </Tooltip>
         </li>
+
+        <li>
+          <Tooltip title="contact us" placement="top-end" arrow>
+            <Link
+              to="Contact"
+              className={activeTab === 3 ? "navLink-active" : "navLink"}
+            >
+              <BsInfoCircle size={21} />
+            </Link>
+          </Tooltip>
+        </li>
+
 
         <li>
           <Tooltip title="More" placement="top-end" arrow>
             <Link
               to="More"
-              className={activeTab === 3 ? "navLink-active" : "navLink"}
+              className={activeTab === 4 ? "navLink-active" : "navLink"}
             >
-              <BsGridFill  size={21} />
+              <BsGridFill size={21} />
             </Link>
           </Tooltip>
         </li>
 
         <li>
-          <Tooltip title={loggedIn ? "Logout" : "Login"} placement="top-end" arrow>
+          <Tooltip
+            title={loggedIn ? "Logout" : "Login"}
+            placement="top-end"
+            arrow
+          >
             <Link
               to="Login"
-              className={activeTab === 4 ? "navLink-active" : "navLink"}
+              className={activeTab === 5 ? "navLink-active" : "navLink"}
             >
-              {loggedIn ? <BsFillPersonPlusFill size={21} /> : <BsFillPersonDashFill size={21} />}
-             
+              {loggedIn ? (
+                <RiLoginCircleLine size={21} />
+              ) : (
+                <RiLoginBoxLine size={21} />
+              )}
             </Link>
           </Tooltip>
         </li>
