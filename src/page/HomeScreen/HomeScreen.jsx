@@ -45,12 +45,12 @@ function HomeScreen({ setActiveTab }) {
         <input onChange={handleChange} type="search" placeholder="search" required />
       </center>
       <div className="mainSection">
-        <center>
+        
           <div className="imgContainer">
             <h1>Development of Software</h1>
             <img className="img" src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg" alt="Development of Software" />
           </div>
-        </center>
+       
         <div className="cardContainer">
           {filteredAirport.map((air) => (
             <Air ir={air} />

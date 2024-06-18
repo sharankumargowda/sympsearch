@@ -104,30 +104,6 @@ body {
   margin-left: 50%;
 }
 
-/* !Styles for devices with a maximum width of 600px (e.g., most phones) */
-@media (max-width: 600px) {
-  .MainContainer header {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .BodySectionContainer {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .BodySectionContainer .BodyNavbarContainer {
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .BodySectionContainer .BodyNavbarContainer nav ul {
-    flex-direction: row;
-  }
-}
-/* !Styles for devices with a width between 601px and 768px (e.g., most tablets) */
-@media (min-width: 601px) and (max-width: 768px) {
-}
 
 .homeScreen {
   overflow: scroll;
@@ -162,7 +138,8 @@ body {
   color: black;
 }
 .mainSection {
-  display: flex;flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   overflow: scroll;
 }
@@ -173,10 +150,40 @@ body {
   height: fit-content;
   justify-content: center;
   margin-top: 40px;
-  flex-wrap: wrap;
 }
 .img {
   display: flex;
   width: 600px;
   height: 450px;
+}
+
+
+
+
+
+
+/* !Styles for devices with a maximum width of 600px (e.g., most phones) */
+@media (max-width: 600px) {
+  .MainContainer header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .BodySectionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .BodySectionContainer .BodyNavbarContainer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .BodySectionContainer .BodyNavbarContainer nav ul {
+    flex-direction: row;
+  }
+  .mainSection{
+    display: flex;
+    flex-direction: column;
+  }
 }
