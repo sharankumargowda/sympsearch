@@ -18,6 +18,7 @@ export default function MainScreen() {
           <NavBar activeTab={activeTab}/>
         </div>
         <div className="BodyContentContainer">
+       
           <Routes>
             <Route path="Home" element={<HomeScreen setActiveTab={setActiveTab}/>} />
             <Route path="About" element={<About  setActiveTab={setActiveTab}/>} />
@@ -26,7 +27,7 @@ export default function MainScreen() {
             <Route path="More" element={<MoreScreen  setActiveTab={setActiveTab}/>} />
             <Route path="*" element={<Navigate to="Home"  setActiveTab={setActiveTab}/>} />
           </Routes>
-       
+         
         </div>
       </div>
     </div>

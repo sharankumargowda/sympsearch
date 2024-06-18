@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import {
   BsFillHouseFill,
   BsGridFill,
-
-  
   BsInfoCircle,
 } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
