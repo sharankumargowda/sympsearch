@@ -17,11 +17,11 @@ export default function NavBar({ activeTab }) {
         <li>
           <Tooltip title="Home" placement="top-end" arrow>
             <Link
-              to="Home"                    
+              to="Home"
               className={activeTab === 1 ? "navLink-active" : "navLink"}
             >
               <BsFillHouseFill size={21} />
-            </Link>   
+            </Link>
           </Tooltip>
         </li>
 

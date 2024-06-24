@@ -1,0 +1,154 @@
+/* Container for the tabs */
+.react-tabs {
+  font-family: Arial, sans-serif;
+}
+
+/* Tab List */
+.react-tabs__tab-list {
+  border-bottom: 1px solid #ccc;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* Tab */
+.react-tabs__tab {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.react-tabs__tab--selected {
+  background: #fff;
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+}
+
+/* Tab hover effect */
+.react-tabs__tab:hover {
+  background-color: #ddd;
+}
+
+/* Tab panel */
+.react-tabs__tab-panel {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+/*////////////////////////////////////*/
+.Login {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.loginh3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.input-wrapper .input-icon {
+  margin-right: 10px;
+}
+
+.input-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.toggle-password {
+  cursor: pointer;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px 15px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link p {
+  margin: 10px 0;
+}
+
+.social-login {
+  width: 100%;
+  padding: 10px 15px;
+  background: #db4437;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-login:hover {
+  background: #c23321;
+}
+
+.social-login .input-icon {
+  margin-right: 10px;
+}

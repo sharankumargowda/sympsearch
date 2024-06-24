@@ -4,6 +4,7 @@
 body {
   margin: 0;
   height: 100vh;
+  overflow: hidden;
 }
 :root {
   --backgroundColor: #ffffff;
@@ -95,74 +96,78 @@ body {
   background-position: center center;
   background-repeat: repeat;
   background-image: url("./assets/bgImg.png");
-  overflow: scroll;
+
   width: 400px;
 }
-.screen2 {
-  width: 50%;
-  border: 1px solid black;
-  margin-left: 50%;
-}
 
-
-.homeScreen {
-  overflow: scroll;
-}
 .cardContainer {
   display: flex;
   width: 50vw;
-  overflow: scroll;
+  object-fit: contain;
   height: 100vh;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.ma {
-  display: flex;
   flex-direction: column;
-
-  width: 250px;
-  height: 250px;
-  overflow: scroll;
-  /* align-content: center; */
-  gap: 20px;
-  text-align: center;
-  backdrop-filter: blur(0px) saturate(180%);
-  -webkit-backdrop-filter: blur(0px) saturate(180%);
-  background-color: rgba(21, 77, 198, 0.75);
-  background-image: url("https://tse4.mm.bing.net/th?id=OIP.mQcW31ycxtFbboeMmTVNBQHaHa&pid=Api&P=0&h=180");
-  /* border-radius: 12px; */
-  border: 1px solid rgba(209, 213, 219, 0.3);
-  color: black;
+  flex-wrap: wrap;
+  background-color: white;
 }
+
 .mainSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  overflow: scroll;
+  overflow: hidden;
 }
 .imgContainer {
   display: flex;
   width: 40vw;
-
-  height: fit-content;
-  justify-content: center;
-  margin-top: 40px;
+  height: 50vh;
+  align-items: center;
+  flex-direction: column;
 }
-.img {
+.health {
   display: flex;
+
+  width: 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  font-size: medium;
+  flex-direction: column;
+}
+
+.loginScreen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  gap: 10px;
+  background-color: #111111;
+}
+.listContainer {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+}
+.formContainer {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
+  border-radius: 20%;
+}
+.loContainer {
   width: 600px;
-  height: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
 
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-/* !Styles for devices with a maximum width of 600px (e.g., most phones) */
 @media (max-width: 600px) {
   .MainContainer header {
     padding-right: 10px;
@@ -182,7 +187,7 @@ body {
   .BodySectionContainer .BodyNavbarContainer nav ul {
     flex-direction: row;
   }
-  .mainSection{
+  .mainSection {
     display: flex;
     flex-direction: column;
   }
