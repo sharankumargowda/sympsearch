@@ -2,9 +2,8 @@ import { useEffect  } from "react";
 import PropTypes from "prop-types";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Google from "../../Components/Google"
-import Login from "../../Components/Login";
-import "../../login.css"
+
+
 
 
 
