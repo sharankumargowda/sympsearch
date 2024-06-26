@@ -115,7 +115,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
   height: 100%;
 }
 .cc {
@@ -130,16 +129,12 @@ body {
 }
 
 .callContainer {
-
   display: flex;
   height: 100vh;
- 
   justify-items: center;
   justify-content: center;
- 
   flex: 1 1 300px;
- 
- 
+  font-style: italic;
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
