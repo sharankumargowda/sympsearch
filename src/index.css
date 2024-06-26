@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0%;
   height: 100vh;
   overflow: hidden;
 }
@@ -59,6 +59,7 @@ body {
   display: flex;
   flex: 1;
   height: calc(100vh - 55px);
+  overflow: scroll;
 }
 .BodySectionContainer .BodyNavbarContainer {
   height: 100%;
@@ -96,74 +97,53 @@ body {
   background-position: center center;
   background-repeat: repeat;
   background-image: url("./assets/bgImg.png");
-  width: 400px;
+  margin: 0%;
+  overflow: scroll;
 }
 
-.cardContainer {
-  display: flex;
-  width: 50vw;
-  object-fit: contain;
+.HomeScreen {
   height: 100vh;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: white;
+  margin: 0%;
 }
-
-.mainSection {
+.HomeContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  overflow: hidden;
+  height: 100vh;
 }
-.imgContainer {
+.CorcelContainer {
+  flex: 1 1 300px;
   display: flex;
-  width: 40vw;
-  height: 50vh;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-around;
+
+  height: 100%;
 }
-.health {
+.cc {
+  flex: 1 1 300px;
+}
+.Health {
   display: flex;
-  width: 40vw;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
-  background-color: gray;
-  font-size: medium;
   flex-direction: column;
+  height: 200px;
+  flex: 1 1 300px;
+  background-color: aquamarine;
 }
 
-.loginScreen {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  gap: 10px;
-  background-color: #111111;
-}
-.listContainer {
-  display: flex;
-  width: 50vw;
-  height: 100vh;
-}
-.formContainer {
-  display: flex;
-  width: 50vw;
-  height: 100vh;
-  justify-content: center;
-  border-radius: 20%;
-}
-.loContainer {
-  width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+.callContainer {
 
+  display: flex;
+  height: 100vh;
+ 
+  justify-items: center;
+  justify-content: center;
+ 
+  flex: 1 1 300px;
+ 
+ 
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .MainContainer header {
     padding-right: 10px;
     padding-left: 10px;
@@ -182,14 +162,5 @@ body {
   }
   .BodySectionContainer .BodyNavbarContainer nav ul {
     flex-direction: row;
-  }
-  .mainSection {
-    display: flex;
-    flex-direction: column;
-  }
-  .Health {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
   }
 }

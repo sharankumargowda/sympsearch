@@ -22,31 +22,9 @@ export default function LoginScreen({ setActiveTab }) {
 
   return (
     <div className="loginScreen">
-      <div className="listContainer">
-        <img
-          src="http://getwallpapers.com/wallpaper/full/d/7/8/302180.jpg"
-          style={{ width: "100%" }}
-        />
-      </div>
-      <div className="formContainer">
-        <div className="loContainer">
-        <div className="auth-tabs">
-          <Tabs>
-            <TabList>
-              <Tab>Register</Tab>
-              <Tab>Login</Tab>
-            </TabList>
 
-            <TabPanel>
-        <Google/>
-            </TabPanel>
-            <TabPanel>
-      <Login/>
-            </TabPanel>
-          </Tabs>
-          </div>
-        </div>
-      </div>
+<div>login Screen</div>
+   
     </div>
 
   );
