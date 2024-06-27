@@ -9,57 +9,70 @@ function HomeScreen({ setActiveTab }) {
   }, [setActiveTab]);
   const health = [
     "hnshdgsgvshjnasbdcgv v hdgbdnwjdyg hdbwbdhghe",
-
     "jnjdhssnj jedhuhuhu",
     "gswtgvqbfst qs6yqavhgsqyquq",
     "vgavgfast gthsgusauayjnn hqsyty  ssmkis jsyasyha",
-
-
-  ]
-
+    "hnshdgsgvshjnasbdcgv v hdgbdnwjdyg hdbwbdhghe",
+    "jnjdhssnj jedhuhuhu",
+    "gswtgvqbfst qs6yqavhgsqyquq",
+    "vgavgfast gthsgusauayjnn hqsyty  ssmkis jsyasyha",
+  ];
 
   return (
     <div className="HomeScreen">
       <div className="HomeContainer">
         <div className="CorcelContainer">
-          <div className="cc">
-            <Carousel autoPlay={true} interval={1000} infiniteLoop={true} showThumbs={false}>
+          <div className="ch">
+            <Carousel
+              autoPlay={true}
+              interval={1000}
+              infiniteLoop={true}
+              showThumbs={false}
+            >
               <div>
-                <img style={{objectFit:"contain"}} src="https://tse1.mm.bing.net/th?id=OIP.rZSMaGZgkwKYn3J2qpx-MAHaE8&pid=Api&P=0&h=180" />
+                <img
+                  style={{ objectFit: "contain", width: "80%",height:"300px"}}
+                  src="https://tse3.mm.bing.net/th?id=OIP.2LCl_K5zGiDuztSzy-ldwgHaEL&pid=Api&P=0&h=180"
+                />
                 <p className="legend">Legend 1</p>
               </div>
               <div>
-                <img style={{objectFit:"contain"}} src="https://tse1.mm.bing.net/th?id=OIP.rZSMaGZgkwKYn3J2qpx-MAHaE8&pid=Api&P=0&h=180" />
+                <img
+                  style={{ objectFit: "contain" ,width: "80%",height:"300px"}}
+                  src="https://www.apderm.com/wp-content/uploads/2020/03/Teledmed_FemaleDoctor_Tablet-scaled.jpg"
+                />
                 <p className="legend">Legend 2</p>
               </div>
               <div>
-                <img style={{objectFit:"contain"}} src="https://tse1.mm.bing.net/th?id=OIP.rZSMaGZgkwKYn3J2qpx-MAHaE8&pid=Api&P=0&h=180" />
-                <p className="legend">Legend 3</p>
+                <img
+                  style={{ objectFit: "contain", width: "80%",height:"300px"}}
+                  src="https://eldohealth.plus/wp-content/uploads/2023/04/patient-img-2.jpg"
+                />
+               
+                <p className="legend" >Legend 3 </p>
+                
               </div>
             </Carousel>
           </div>
-          <div className="Health">
-          <center>
-            <h1>Health Tips</h1>
-    
-
-         
-            {health.map((he)=>(<li>{he}</li>))}
-  
-            
+          <div className="Health" style={{backgroundColor:"yellow"}}>
+            <center>
+              <h1>Health Tips</h1>
+              {health.map((he) => (
+               <ol>{he}</ol>
+              ))}
             </center>
-
           </div>
         </div>
-
         <div className="callContainer">
-        
-    
-           <h1> Talk With Doctor</h1>
-
-        <img src="https://png.pngtree.com/png-clipart/20231202/original/pngtree-doctor-3d-rendered-emoji-icon-png-image_13755185.png" height={"100%"} width={"50%"} />
-   
-
+          <h1 style={{ textAlign: "center" }}> Talk With Doctor</h1>
+          <img
+            src="https://png.pngtree.com/png-clipart/20231202/original/pngtree-doctor-3d-rendered-emoji-icon-png-image_13755185.png"
+            width={"40%"} height={"20%"}
+          />
+          <img 
+            src="https://cdn4.iconfinder.com/data/icons/communication-447/32/call-2-512.png"
+            height={"200px"} 
+          />
         </div>
       </div>
     </div>
